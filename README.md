@@ -4,5 +4,5 @@
 - Arch Linux, Hyprland, Sway
 
 # Installation
-- `git clone https://github.com/jpreslov/arch-hyprland-script`
-- `cd arch-hyprland-script && ./setup.sh`
+```git clone https://github.com/jpreslov/arch-hyprland-script```
+```cd arch-hyprland-script && ./setup.sh```
