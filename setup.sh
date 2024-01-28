@@ -21,9 +21,9 @@ echo "set -g default-shell /usr/bin/zsh"
 tmux source-file ~/.tmux.conf
 
 # Extract .config tarball
-tar -xvf config.tar.gz
+tar -xvzf ./backup/config.tar.gz
 
 bash ./move.sh
 
 # Move zsh files
-mv $HOME/.zsh/zsh/.zshrc $HOME/ && exec zsh 
+# mv $HOME/.zsh/zsh/.zshrc $HOME/ && exec zsh 

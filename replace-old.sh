@@ -4,7 +4,7 @@ srcdir="./config"
 
 dstdir="$HOME/.config"
 
-bakdir="$HOME/.config/_bak"
+bakdir="$HOME/.config_bak"
 
 mkdir -p "$bakdir"
 
