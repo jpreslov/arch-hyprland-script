@@ -25,5 +25,14 @@ tar -xvzf ./backup/config.tar.gz
 
 bash ./move.sh
 
+# Check if user is in video group 
+groups "$USER" | grep -q "\\bvideo\\b"
+
+# Add user to video group if not already a member
+if [ $? -ne 0 ]; then
+  sudo usermod -a -G video "$USER"
+  echo "Added $USER to the video group"
+fi
+
 # Move zsh files
 # mv $HOME/.zsh/zsh/.zshrc $HOME/ && exec zsh 
